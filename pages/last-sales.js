@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 const LastSalesPage = () => {
   const [sales, setSales] = useState();
   const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     setIsLoading(true);
     fetch("https://nextjs-mvp-default-rtdb.firebaseio.com/sales.json")
